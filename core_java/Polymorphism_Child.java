@@ -15,10 +15,10 @@ public class Polymorphism_Child extends Polymorphism_Parent {
 		Polymorphism_Parent p = new Polymorphism_Child();
 		p.home();
 		//p.bike();
-		p.home2();
+		Polymorphism_Parent.home2();
 		Polymorphism_Child c = new Polymorphism_Child();
 		c.home();
 		c.bike();
-		c.home2();
+		Polymorphism_Child.home2();
 	}
 }
