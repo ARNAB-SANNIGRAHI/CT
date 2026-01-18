@@ -41,9 +41,9 @@ class Student2 extends Human {
 public class Inheritance_Human {
     public static void main(String[] args) {
 
-        Employee2 e = new Employee2("xyz", 12, 'M', 1, 35000.00);
+        new Employee2("xyz", 12, 'M', 1, 35000.00);
         System.out.println("------------------------");
 
-        Student2 s = new Student2("abc", 20, 'F', 85);
+        new Student2("abc", 20, 'F', 85);
     }
 }
