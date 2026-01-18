@@ -37,8 +37,8 @@ class Laptop1 extends Product {
 public class Inheritance_Product {
     public static void main(String[] args) {
 
-        Mobile m = new Mobile("Samsung", 20000, "5G");
+        new Mobile("Samsung", 20000, "5G");
         System.out.println("--------------------");
-        Laptop1 l = new Laptop1("Dell", 60000);
+        new Laptop1("Dell", 60000);
     }
 }
