@@ -11,6 +11,7 @@ public class Constructor_Chaining {
 	}
 
 	public static void main(String[] args) {
-		Constructor_Chaining c = new Constructor_Chaining(2);
+		new Constructor_Chaining(2);
+		
 	}
 }
