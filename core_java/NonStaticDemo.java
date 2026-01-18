@@ -12,8 +12,7 @@ public class NonStaticDemo {
 
     public static void main(String[] args) {
         System.out.println("Main start");
-        NonStaticDemo e1=new NonStaticDemo();
-        NonStaticDemo e2=new NonStaticDemo();
+        new NonStaticDemo();
         System.out.println("main end");
     }
 }
