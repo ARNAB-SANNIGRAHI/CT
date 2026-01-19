@@ -1,0 +1,9 @@
+package array;
+
+public interface EmployeeService {
+	Employee[] getHighSalaryEmployee(Employee[] employees, double minSalary);
+	
+	double calculateAverageSalary(Employee[] employees);
+	
+	Employee getTopPaidEmployee(Employee[] employees);
+}
