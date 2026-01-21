@@ -42,6 +42,7 @@ public class Person {
 	
 	System.out.println("---toString()---");
 	System.out.println(p1);
+	System.out.println(p2);
 	//System.out.println(p1.toString());  // ->This and the previous line is same
 	
 	System.out.println("---hashCode()---");
@@ -55,15 +56,17 @@ public class Person {
 	System.out.println(p1.equals(p4));  // ->null pointer Exception
 	
 	System.out.println("---getClass()---");
-	System.out.println(p1.getClass());
+	System.out.println(p1.getClass());  // ->The output type of this is called fully qualified classname
+	System.out.println(p2.getClass());
 	
 	System.out.println("---comparing with another class---");
 	Teacher t1 = new Teacher(10,"XYZ");
 	System.out.println(p1.equals(t1));
 	System.out.println(p3.equals(t1));
-	
-	
+	System.out.println("---Compare address of two objects---");
 	System.out.println(p1==p2);// It compares address of objects
+	System.out.println(p1==p3);
+	
 	
 }
 }
