@@ -37,7 +37,8 @@ public class Teacher {
 	Teacher t4 = null;
 	
 	System.out.println("---toString()---");
-	//System.out.println(p1.toString());  // ->This and the previous line is same
+	System.out.println(t1.toString());
+	System.out.println(t2.toString());
 	
 	System.out.println("---hashCode()---");
 	System.out.println(t1.hashCode());
@@ -58,4 +59,5 @@ public class Teacher {
 	System.out.println(t2.equals(p));
 	
 }
+
 }
