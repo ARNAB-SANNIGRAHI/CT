@@ -24,8 +24,8 @@ class Employee {
 
 public class EmployeeTest {
 
-    static List<Employee> findEmpByDep(List<Employee> employees, String dept) {
-        List<Employee> result = new ArrayList<>();
+    static ArrayList<Employee> findEmpByDep(ArrayList<Employee> employees, String dept) {
+        ArrayList<Employee> result = new ArrayList<>();
         for (Employee e : employees) {
             if (dept.equalsIgnoreCase(e.dept)) {
                 result.add(e);
@@ -34,8 +34,8 @@ public class EmployeeTest {
         return result;
     }
 
-    static List<Employee> findEmpBySal(List<Employee> employees, double sal) {
-        List<Employee> result = new ArrayList<>();
+    static ArrayList<Employee> findEmpBySal(ArrayList<Employee> employees, double sal) {
+        ArrayList<Employee> result = new ArrayList<>();
         for (Employee e : employees) {
             if (e.salary > sal) {
                 result.add(e);
@@ -46,7 +46,7 @@ public class EmployeeTest {
 
     public static void main(String[] args) {
 
-        List<Employee> empList = new ArrayList<>();
+        ArrayList<Employee> empList = new ArrayList<>();
 
         empList.add(new Employee(1, "Rahul", 450000, "Development"));
         empList.add(new Employee(2, "Anita", 600000, "HR"));
@@ -55,13 +55,13 @@ public class EmployeeTest {
         empList.add(new Employee(5, "Suresh", 900000, "Development"));
 
         System.out.println("Employees in Development Department:");
-        List<Employee> devEmps = findEmpByDep(empList, "Development");
+        ArrayList<Employee> devEmps = findEmpByDep(empList, "Development");
         for (Employee e : devEmps) {
             System.out.println(e);
         }
 
         System.out.println("\nEmployees with salary more than 500000:");
-        List<Employee> highSalEmps = findEmpBySal(empList, 500000);
+        ArrayList<Employee> highSalEmps = findEmpBySal(empList, 500000);
         for (Employee e : highSalEmps) {
             System.out.println(e);
         }
